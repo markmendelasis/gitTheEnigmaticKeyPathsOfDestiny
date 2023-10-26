@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Enigmatic Key: Paths of Destiny</title>
+    <link rel="shortcut icon" href="resources/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <h1>The Enigmatic Key: Paths of Destiny</h1>
+            <!-- about
+                is an immersive adventure game that places players in the shoes of Amelia, 
+                a young explorer drawn into the mystery of an ancient mansion rumored
+                 to conceal an extraordinary secret. As players guide Amelia through
+                  the game, they face a series of pivotal choices that significantly 
+                  impact the storyline. Will you brave the mansion's dangers and unlock
+                   its hidden treasures, or will you pursue alternative paths, each 
+                   leading to a unique outcome?
+            -->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Story Select</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div>
+
+        <div class="tutorial">
+            <section>
+                <h2>Tutorial</h2>
+                <p>Welcome to "The Enigmatic Key: Paths of Destiny"! In this text-based adventure, you play as Amelia,
+                    making crucial choices that shape the fate of Eldridge. Navigate using the menu, and at decision
+                    points, choose actions wisely to influence the story. Explore options: entering the mansion,
+                    researching, or leaving town. Each choice leads to unique outcomes, crafting various endings.
+                    Experiment, replay, and uncover the mysteries of the enigmatic key. Enjoy your adventure!
+
+                </p>
+            </section>
+        </div>
+        
+        <div id="startButton">
+            <button class="button-89" role="button">Play</button>
+        </div>
+
+
+
+        <!-- First part of the story -->
+        <div id="beginning" style="display: none;">
+            <div class="mainStory">
+                <p class="theStory">In the quaint town of Eldridge, there stood an ancient, mysterious house atop a
+                    hill.
+                    Legends whispered about a key that could unlock unimaginable treasures hidden within its walls.
+                    Amelia,
+                    a curious young woman, had always been fascinated by this tale. One sunny afternoon, she found
+                    herself
+                    standing before the imposing mansion, holding a weathered map rumored to lead to the elusive key.
+                </p>
+            </div>
+            <div class="option">
+                <div class="buttonOptionContainer">
+                    <button class="buttonOption firstOption" id="firstOption0">Amelia decides to enter the
+                        mansion.</button>
+                    <button class="buttonOption secondOption" id="secondOption0">Amelia decides to search for more
+                        information.</button>
+                    <button class="buttonOption thirdOption" id="thirdOption0">Amelia decides to leave the town and
+                        forget about the
+                        key.</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- If option one was selected in the beginning of the story-->
+        <div id="firstOption" style="display: none;">
+            <div class="mainStory">
+                <p class="theStory">With determination in her eyes, Amelia pushed open the creaky door and stepped
+                    inside. The house was eerily silent, with dust motes dancing in the sunlight that streamed through
+                    the broken windows. Amelia followed the map's directions and finally found the hidden chamber. In
+                    the dim light, she discovered the key, intricately designed and glowing faintly. As soon as she
+                    touched it, the entire house began to shake. </p>
+            </div>
+            <div class="option">
+                <div class="buttonOptionContainer">
+                    <button class="buttonOption firstOption1" id="firstChoice">Amelia flees the mansion.</button>
+                    <button class="buttonOption secondOption1" id="secondChoice">Amelia stays in the mansion.</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- If option two was selected in the beginning of the story-->
+        <div id="secondOption" style="display: none;">
+            <div class="mainStory">
+                <p class="theStory">Instead of entering the mansion right away, Amelia chose to gather more information
+                    about the key and its history. She visited the town's library, consulted historians, and deciphered
+                    ancient texts. Weeks turned into months as she delved deeper into the mysteries surrounding the
+                    mansion and the key.</p>
+            </div>
+            <div class="option">
+                <div class="buttonOptionContainer">
+                    <button class="buttonOption firstOption2" id="firstChoice2">Amelia enters the mansion armed with
+                        knowledge.</button>
+                    <button class="buttonOption secondOption2" id="secondChoice2">Amelia learns the key's true
+                        purpose.</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- If option three was selected in the beginning of the story-->
+        <div id="thirdOption" style="display: none;">
+            <div class="mainStory">
+                <p class="theStory">Overwhelmed by the risks and uncertainties, Amelia chose to leave Eldridge and never
+                    return. She packed her bags, bid farewell to her friends, and set out on a new adventure, leaving
+                    behind the mystery of the enigmatic key. Years passed, and Amelia found herself in distant lands,
+                    far from the memories of Eldridge.</p>
+            </div>
+            <div class="option">
+                <div class="buttonOptionContainer">
+                    <button class="buttonOption firstOption3" id="firstChoice3">Amelia finds a new purpose.</button>
+                    <button class="buttonOption secondOption3" id="secondChoice3">The mystery haunts Amelia.</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Amelia flees the mansion. -->
+
+        <div id="firstOption1" style="display: none;">
+            <div class="mainStory">
+                <p class="theStory">Terrified, Amelia ran out of the mansion just in time to watch it crumble into
+                    ruins. The key disintegrated in her hands. The town never found out what secrets lay within.
+                    Whispers of the lost treasures haunted Eldridge, becoming a cautionary tale for generations.</p>
+            </div>
+        </div>
+
+        <!-- Amelia stays in the mansion. -->
+
+        <div id="secondOption1" style="display: none;">
+            <div class="mainStory">
+                <p class="theStory">Amelia decided to stay and face the consequences. To her surprise, the shaking
+                    stopped, and the house transformed into a magnificent castle. The key, it seemed, had immense power.
+                    Amelia became the ruler of the castle, guarding its secrets and protecting the town from any harm.
+                    The castle became a beacon of hope, a symbol of prosperity that drew people from far and wide.</p>
+            </div>
+        </div>
+
+        <!-- Amelia enters the mansion armed with knowledge. -->
+        <div id="firstOption2" style="display: none;">
+            <div class="mainStory">
+                <p class="theStory">With her newfound knowledge, Amelia navigated the mansion's traps and reached the
+                    hidden chamber. Using her understanding of the key's power, she harnessed it to bring prosperity to
+                    the town. Eldridge flourished, and its people lived happily ever after. Amelia became a respected
+                    scholar, sharing her wisdom and ensuring the town's legacy.</p>
+            </div>
+        </div>
+
+        <!-- Amelia learns the key's true purpose. -->
+        <div id="secondOption2" style="display: none;">
+            <div class="mainStory">
+                <p class="theStory">During her research, Amelia discovered that the key was a dangerous artifact,
+                    capable of immense destruction if misused. Fearing its power falling into the wrong hands, she
+                    decided to destroy it. With the help of skilled craftsmen, she melted the key down and recast it
+                    into a symbol of unity for the town. Eldridge thrived as a community bound together by the lessons
+                    learned from the key's history.</p>
+            </div>
+        </div>
+
+        <!-- Amelia finds a new purpose. -->
+        <div id="firstOption3" style="display: none;">
+            <div class="mainStory">
+                <p class="theStory">In her travels, Amelia found a new purpose, helping others and making a difference
+                    in the world. Although she never discovered the key's secrets, she found fulfillment in her
+                    altruistic endeavors, knowing that she was contributing to the greater good. Eldridge became a
+                    distant memory, but the lessons learned there shaped her compassionate heart.</p>
+            </div>
+        </div>
+
+        <!-- The mystery haunts Amelia. -->
+
+        <div id="secondOption3" style="display: none;">
+            <div class="mainStory">
+                <p class="theStory">No matter where Amelia went, thoughts of the key and the secrets it held haunted
+                    her. She spent her life wondering what could have been, forever plagued by the curiosity she had
+                    chosen to ignore. In her quiet moments, she often found herself sketching images of the mansion and
+                    the key, trying to unravel the enigma that had eluded her. The tale of Eldridge and the enigmatic
+                    key became a puzzle she could never solve, a mystery that stayed with her until the end of her days.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2023 The Enigmatic Key: Paths of Destiny . All rights reserved.</p>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>

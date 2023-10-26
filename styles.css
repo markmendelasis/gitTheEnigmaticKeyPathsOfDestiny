@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+}
+
+header{
+    padding: 0;
+    margin: 0;
+    background-color: aqua;
+}
+
+
+.buttonOption{
+    height: auto;
+    margin-bottom: 2vh;
+    
+}
+
+section{
+  display: grid;
+  place-items: center;
+  width: 50%;
+
+}
+.tutorial{
+
+    display: flex;
+    justify-content: center;
+    align-items: center; /* This will make sure the button takes the full height of the viewport */
+
+}
+
+
+.mainStory{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 5vh;
+    padding-top: 10vh;
+
+
+}
+.option{
+    display: flex;
+    width: 100%;
+    justify-content:center ;
+    align-items: center;
+    margin-bottom: 10vh ;
+
+
+}
+.buttonOptionContainer{
+    width: 50%;
+    display: grid;
+    margin-bottom: 10vh 
+    
+}
+
+.theStory{
+    width: 50%;
+    text-align: justify;
+}
+
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+h1 {
+  color: gold;
+}
+#startButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    margin-bottom: 20vh;/* This will make sure the button takes the full height of the viewport */
+  }
+
+/* CSS button from https://getcssscan.com/css-buttons-examples */
+.button-89 {
+  --b: 3px; /* border thickness */
+  --s: 0.45em; /* size of the corner */
+  --color: #373b44;
+  padding: calc(2em + var(--s)) calc(3.6em + var(--s)); /* Increase padding */
+  font-size: 24px; /* Increase font size */
+  width: auto; /* Let the button adjust its width based on content */
+
+  /* padding: calc(0.5em + var(--s)) calc(0.9em + var(--s)); */
+  color: var(--color);
+  --_p: var(--s);
+  background: conic-gradient(
+      from 90deg at var(--b) var(--b),
+      #0000 90deg,
+      var(--color) 0
+    )
+    var(--_p) var(--_p) / calc(100% - var(--b) - 2 * var(--_p))
+    calc(100% - var(--b) - 2 * var(--_p));
+  transition: 0.3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: 0.6em;
+  /* font-size: 16px; */
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-89:hover,
+.button-89:focus-visible {
+  --_p: 0px;
+  outline-color: var(--color);
+  outline-offset: 0.05em;
+}
+
+.button-89:active {
+  background: var(--color);
+  color: #fff;
+}
